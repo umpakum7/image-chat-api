@@ -13,8 +13,14 @@ def get_response(input, image):
     return response.text
 
 def main():
+    st.sidebar.header("About")
+    st.sidebar.markdown("이미지 분석 AI 서비스 입니다.")
+    st.sidebar.write(" **** ")
+
+    st.sidebar.markdown("Contact to me")
+    st.sidebar.markdown("[![GIthub](https://www.github.com/umpakum7/)]")
     st.title("Image AI Chatbot")
-    st.write("이미지와 질무을 올려보세요")
+    st.write("이미지와 질문을 올려보세요")
 
     capture = st.radio("모드 선택", ("cam", "upload"))
 
